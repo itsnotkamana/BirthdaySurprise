@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Gift</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .gift {
+            cursor: pointer;
+
+            width: 300px;
+        }
+        .tap-text {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #6b4226;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/OIP.XwqpkBfbib7f7kHn98gs1QAAAA?rs=1&pid=ImgDetMain" alt="Gift" class="gift" onclick="openLetter()">
+    <div class="tap-text">Tap on the gift to reveal your surprise!</div>
+    <script>
+        function openLetter() {
+            window.location.href = "letter.html";
+        }
+    </script>
+</body>
+</html>
